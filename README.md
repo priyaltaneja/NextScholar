@@ -12,7 +12,7 @@ NextScholar is a Chrome extension designed to help students stay on top of deadl
 
 ## 🚀 Get Started in Minutes
 **Chrome Web Store (Recommended for automatic updates)**
-1.  Install NextScholar from the Chrome Web Store
+1.  Install NextScholar from the [Chrome Web Store](https://chromewebstore.google.com/detail/nextscholar/ndohegljfodihdiaopgalhlinaamcfbj)
 2.  Pin NextScholar for quick access: Click the puzzle piece (Extensions) icon in your toolbar, then click the pin next to NextScholar
 3.  Open the extension by clicking the NextScholar icon
 
@@ -73,4 +73,4 @@ Built with ❤️ for students everywhere, by a student.
 ## 📧 Contact
 
 Priyal Taneja - [@priyaltaneja](https://github.com/priyaltaneja)
-Project Link: [https://github.com/priyaltaneja/NextScholar](https://github.com/priyaltaneja/NextScholar)
+Website: [next-scholar.com](https://next-scholar.com)
