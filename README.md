@@ -4,10 +4,15 @@ NextScholar is a Chrome extension designed to help students stay on top of deadl
 
 ## 🌟 Features
 ➕Add and organize scholarships with deadlines, amounts, notes, and more
+
 ⌛Instantly see which applications are due soon or completed
+
 🎯Set and track your weekly application goals to stay motivated
+
 🗓️Sync all deadlines to your Google Calendar with a single click
+
 📈Export your scholarship list to a CSV for backup or sharing
+
 🔎Sort and filter to find the opportunities that matter most
 
 ## 🚀 Get Started in Minutes
