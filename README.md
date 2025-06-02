@@ -1,4 +1,4 @@
-# NextScholar - Scholarship Tracker Chrome Extension
+# NextScholar 
 
 NextScholar is a Chrome extension designed to help students stay on top of deadlines, track their personal progress, and simplify their chaotic workflow.
 
@@ -77,6 +77,6 @@ Built with ❤️ for students everywhere, by a student.
 
 ## 📧 Contact
 
-Priyal Taneja - [@priyaltaneja](mailto:priyaltaneja15@gmail.com)
+Priyal Taneja - [priyaltaneja15@gmail.com](mailto:priyaltaneja15@gmail.com)
 
 Website: [next-scholar.com](https://next-scholar.com)
