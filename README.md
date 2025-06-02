@@ -77,5 +77,6 @@ Built with ❤️ for students everywhere, by a student.
 
 ## 📧 Contact
 
-Priyal Taneja - [@priyaltaneja](https://github.com/priyaltaneja)
+Priyal Taneja - [@priyaltaneja](mailto:priyaltaneja15@gmail.com)
+
 Website: [next-scholar.com](https://next-scholar.com)
