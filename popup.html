@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NextScholar</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" id="main-container">
+    <h1>NextScholar</h1>
+    
+    <div class="tab-bar">
+      <button class="tab-btn active" id="tab-due">Due This Week</button>
+      <button class="tab-btn" id="tab-all">All Scholarships</button>
+    </div>
+
+    <div id="tab-due-content">
+      <div class="weekly-goal-container">
+        <h2>Weekly Application Goal</h2>
+        <form id="weekly-goal-form">
+          <div class="goal-row">
+            <label for="weekly-goal-input">My goal:</label>
+            <input type="number" id="weekly-goal-input" min="1" style="width:44px;">
+            <span class="scholarships-label">scholarships</span>
+          </div>
+          <button type="submit" class="btn-primary" style="margin-left:8px;">Set Goal</button>
+        </form>
+        <div id="weekly-goal-progress" class="weekly-goal-progress"></div>
+        <button id="reset-weekly-count" class="btn-reset-weekly" title="Reset completed count" type="button">Reset</button>
+      </div>
+      <div class="list-container">
+        <div class="list-header">
+          <h2>Your Scholarships</h2>
+          <button id="add-scholarship-btn-due" class="btn-primary">Add Scholarship</button>
+        </div>
+        <div class="filter-sort">
+          <select id="sort-by-due">
+            <option value="deadline-asc">Deadline (Closest First)</option>
+            <option value="deadline-desc">Deadline (Furthest First)</option>
+            <option value="amount-desc">Amount (Highest First)</option>
+            <option value="amount-asc">Amount (Lowest First)</option>
+          </select>
+        </div>
+        <div id="scholarship-list-due"></div>
+      </div>
+    </div>
+
+    <div id="tab-all-content" style="display:none;">
+      <div class="list-container">
+        <div class="list-header">
+          <h2>All Scholarships</h2>
+          <button id="add-scholarship-btn-all" class="btn-primary">Add Scholarship</button>
+        </div>
+        <div class="filter-sort">
+          <select id="sort-by">
+            <option value="deadline-asc">Deadline (Closest First)</option>
+            <option value="deadline-desc">Deadline (Furthest First)</option>
+            <option value="amount-desc">Amount (Highest First)</option>
+            <option value="amount-asc">Amount (Lowest First)</option>
+          </select>
+          <button id="clear-all" class="btn-clear">Clear All</button>
+          <button id="download-csv" class="btn-clear">Download CSV</button>
+        </div>
+        <button id="sync-calendar" class="btn-sync">
+          <img src="icons/calendar.png" alt="Google Calendar" class="calendar-icon" height="20" style="margin-right:7px;vertical-align:middle;position:relative;top:2px;object-fit:contain;">
+          Sync to Google Calendar
+        </button>
+        <div id="scholarship-list-all"></div>
+      </div>
+    </div>
+    
+    <div class="form-container" id="form-container" style="display: none;">
+      <h2>Add New Scholarship</h2>
+      <form id="scholarship-form">
+        <div class="form-group">
+          <label for="name">Scholarship Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="url">URL:</label>
+          <input type="url" id="url" required>
+        </div>
+        <div class="form-group">
+          <label for="deadline">Application Deadline:</label>
+          <input type="date" id="deadline" required>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount ($):</label>
+          <input type="number" id="amount" min="0">
+        </div>
+        <div class="form-group">
+          <label for="progress">Progress:</label>
+          <select id="progress" required>
+            <option value="not-started">Not Started</option>
+            <option value="in-progress">In Progress</option>
+            <option value="completed">Completed</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="notes">Notes:</label>
+          <textarea id="notes"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="reminder">Reminder (days before deadline):</label>
+          <input type="number" id="reminder" min="1" value="7">
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-submit">Save Scholarship</button>
+          <button type="button" id="cancel-btn" class="btn-cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

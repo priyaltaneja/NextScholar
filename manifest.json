@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "NextScholar",
+    "version": "1.3",
+    "description": "Your smart hub to conquer scholarship applications — track deadlines, requirements, and progress, all in one place.",
+    "oauth2": {
+      "client_id": "668123542288-b225497m6geb3dns0mrehq3tccs41olj.apps.googleusercontent.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/calendar.events"
+      ]
+    },
+    "permissions": [
+      "identity",
+      "identity.email",
+      "storage",
+      "alarms",
+      "notifications",
+      "contextMenus"
+    ],
+    "host_permissions": [
+      "https://www.googleapis.com/"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+  
